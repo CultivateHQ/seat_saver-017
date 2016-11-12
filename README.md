@@ -57,12 +57,6 @@ npm install
 # also remember to use \ instead of / in file paths
 mix ecto.create && mix ecto.migrate && mix run priv/repo/seeds.exs
 
-# if running on Windows you will also need to ...
-npm install -g elm
-cd web/elm
-elm package install -y
-cd ../..
-
 # once everything is setup, start a local server with
 iex -S mix phoenix.server
 ```
