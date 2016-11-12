@@ -58,6 +58,7 @@ exports.config = {
     },
     elmBrunch: {
       elmFolder: "web/elm",
+      executablePath: '../../node_modules/elm/binwrappers',
       mainModules: ["SeatSaver.elm"],
       outputFolder: "../static/vendor"
     }
