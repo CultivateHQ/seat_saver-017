@@ -1,9 +1,11 @@
 module SeatSaver exposing (..)
 
+
 import Html exposing (..)
 import Html.Attributes exposing (class)
 import Html.App as Html
 import Html.Events exposing (onClick)
+
 
 main : Program Never
 main =
@@ -24,6 +26,7 @@ type alias Seat =
 
 type alias Model =
   List Seat
+
 
 init : Model
 init =
@@ -46,6 +49,7 @@ init =
 
 type Msg = Toggle Seat
 
+
 update : Msg -> Model -> Model
 update msg model =
   case msg of
@@ -64,6 +68,7 @@ update msg model =
 view : Model -> Html Msg
 view model =
   ul [ class "seats" ] (List.map seatItem model)
+
 
 seatItem : Seat -> Html Msg
 seatItem seat =
