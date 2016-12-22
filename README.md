@@ -47,7 +47,7 @@ The following tutorials have yet to be updated.
 Maybe you'd like to just clone this repo and see it in action without going through the tutorials. In that case, check out the [Setup post](http://www.cultivatehq.com/posts/phoenix-elm-1) to install the requirements and then do the following:
 
 ```shell
-git clone git@github.com:cultivatehq/seat_saver-017.git
+git clone https://github.com/CultivateHQ/seat_saver-017.git seat_saver
 cd seat_saver
 mix deps.get
 npm install
